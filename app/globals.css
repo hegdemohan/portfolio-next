@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--scrollbar-track: #010c15;
+	--scrollbar-thumb: #607b9650;
+}
+
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--scrollbar-track);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-thumb);
+	border-radius: 5px;
+}
+
+html {
+	@apply bg-dark-bg;
+	padding: 30px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+	scrollbar-width: thin;
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: 'Fira Code Light';
+	src: url('../assets/fonts/fira-code/FiraCode-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fira Code Regular';
+	src: url('../assets/fonts/fira-code/FiraCode-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fira Code Retina';
+	src: url('../assets/fonts/fira-code/FiraCode-Retina.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fira Code Medium';
+	src: url('../assets/fonts/fira-code/FiraCode-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fira Code SemiBold';
+	src: url('../assets/fonts/fira-code/FiraCode-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fira Code Bold';
+	src: url('../assets/fonts/fira-code/FiraCode-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Fira Code Variable';
+	src: url('../assets/fonts/fira-code/FiraCode-Variable.ttf') format('truetype');
+}
+
+input[type='checkbox'] {
+	appearance: none;
+	background-color: transparent;
+	width: 1.15em;
+	height: 1.15em;
+	border: 2px solid currentColor;
+	border-radius: 0.15em;
+	margin-top: 1px;
+}
+
+input[type='checkbox']:checked {
+	background-color: currentColor;
+	background-image: url("data:image/svg+xml;utf8,<svg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.38587 7.2802L11.9718 0.693573L12.9856 1.70668L5.38587 9.30641L0.826172 4.74671L1.83928 3.73361L5.38587 7.2802Z' fill='white'/></svg>");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+input[type='checkbox']:checked:hover {
+	box-shadow: #607b968b 0px 0px 0px 2px;
+}
+
+input[type='checkbox']:not(:checked) {
+	border-color: currentColor;
+}
+
+input[type='checkbox']:hover {
+	cursor: pointer;
+	background-color: currentColor;
+	background-image: url("data:image/svg+xml;utf8,<svg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.38587 7.2802L11.9718 0.693573L12.9856 1.70668L5.38587 9.30641L0.826172 4.74671L1.83928 3.73361L5.38587 7.2802Z' fill='white'/></svg>");
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: #607b968b 0px 0px 0px 2px;
+}
+
+input[type='checkbox']:hover:not(:checked) {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.1);
+	background-image: none;
+	box-shadow: #607b968b 0px 0px 0px 2px;
+}
+
+input[type='checkbox']:focus {
+	box-shadow: none;
+}
