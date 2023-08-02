@@ -134,7 +134,7 @@ const SnakePlayArea = ({ numOfFoodEaten, setNumOfFoodEaten }: Props) => {
 						className="pointer-events-auto mb-10 rounded-lg border border-gray-950/50 bg-br-active px-4 py-1 font-fira_regular text-sm"
 						onClick={handleStartGame}
 					>
-						start-game
+						{getFormattedMessage({ id: 'game.startGame', defaultMessage: 'start-game' })}
 					</button>
 				</div>
 			)}

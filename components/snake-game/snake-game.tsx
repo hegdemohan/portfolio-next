@@ -56,7 +56,7 @@ const SnakeGame = () => {
 	const [numOfFoodEaten, setNumOfFoodEaten] = useState(0);
 	useSnakeDirection();
 	return (
-		<div className="relative z-20 flex h-96 max-w-3xl grow items-center gap-2 rounded-xl border border-black bg-gradient-to-b from-green to-darkGreen p-6">
+		<div className="relative z-20 flex h-auto max-w-3xl grow items-center gap-2 rounded-xl border border-black bg-gradient-to-b from-green to-darkGreen p-6">
 			{NailIcons.map((icon, index) => (
 				<IconComponent
 					key={index}
@@ -108,7 +108,7 @@ const SnakeGame = () => {
 				</div>
 				<Link
 					href={'/about'}
-					className="flex  items-center justify-center self-end rounded-lg border  border-slate-300 px-4 py-2 hover:border-white hover:bg-white/20 hover:text-white"
+					className="mb-2 flex items-center justify-center self-end rounded-lg border  border-slate-300 px-4 py-2 hover:border-white hover:bg-white/20 hover:text-white"
 				>
 					{getFormattedMessage({ id: 'game.skip', defaultMessage: 'skip' })}
 				</Link>
