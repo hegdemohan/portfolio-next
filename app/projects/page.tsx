@@ -119,7 +119,7 @@ const Projects = () => {
 							>
 								<div className="max-h-52 overflow-clip">
 									<Image
-										src={`/../public/project-images/${index % PROJECT_IMAGES_LENGTH}.png`}
+										src={`/project-images/${index % PROJECT_IMAGES_LENGTH}.png`}
 										alt="unsplash-image"
 										width={100}
 										height={100}
