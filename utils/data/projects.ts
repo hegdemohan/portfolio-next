@@ -15,6 +15,11 @@ export const TECHS: Tech[] = [
 	},
 	{
 		key: uuidv4(),
+		icon: 'tailwindCss',
+		tech: 'Tailwind CSS',
+	},
+	{
+		key: uuidv4(),
 		icon: 'javaScript',
 		tech: 'JavaScript',
 	},
@@ -53,9 +58,19 @@ export const TECHS: Tech[] = [
 export const PROJECTS: Project[] = [
 	{
 		key: uuidv4(),
-		title: { id: 'dev.projects.1.title', defaultMessage: '_jober-desk-frontend' },
+		title: { id: 'dev.projects.1.title', defaultMessage: '_portfolio' },
 		description: {
 			id: 'dev.projects.1.description',
+			defaultMessage: '',
+		},
+		tech: ['React', 'TypeScript', 'HTML', 'Tailwind CSS'],
+		url: 'https://github.com/hegdemohan/portfolio-next',
+	},
+	{
+		key: uuidv4(),
+		title: { id: 'dev.projects.2.title', defaultMessage: '_jober-desk-frontend' },
+		description: {
+			id: 'dev.projects.2.description',
 			defaultMessage: '',
 		},
 		tech: ['Angular', 'TypeScript', 'HTML', 'CSS'],
@@ -63,9 +78,9 @@ export const PROJECTS: Project[] = [
 	},
 	{
 		key: uuidv4(),
-		title: { id: 'dev.projects.2.title', defaultMessage: '_jober-desk-backend' },
+		title: { id: 'dev.projects.3.title', defaultMessage: '_jober-desk-backend' },
 		description: {
-			id: 'dev.projects.2.description',
+			id: 'dev.projects.3.description',
 			defaultMessage: '',
 		},
 		tech: ['Python', 'Docker'],
@@ -73,9 +88,9 @@ export const PROJECTS: Project[] = [
 	},
 	{
 		key: uuidv4(),
-		title: { id: 'dev.projects.3.title', defaultMessage: '_docx-reader' },
+		title: { id: 'dev.projects.4.title', defaultMessage: '_docx-reader' },
 		description: {
-			id: 'dev.projects.3.description',
+			id: 'dev.projects.4.description',
 			defaultMessage: '',
 		},
 		tech: ['Android'],
@@ -83,9 +98,9 @@ export const PROJECTS: Project[] = [
 	},
 	{
 		key: uuidv4(),
-		title: { id: 'dev.projects.4.title', defaultMessage: '_automated-learning-agreement' },
+		title: { id: 'dev.projects.5.title', defaultMessage: '_automated-learning-agreement' },
 		description: {
-			id: 'dev.projects.4.description',
+			id: 'dev.projects.5.description',
 			defaultMessage: '',
 		},
 		tech: ['React', 'JavaScript', 'HTML', 'CSS'],
@@ -93,9 +108,9 @@ export const PROJECTS: Project[] = [
 	},
 	{
 		key: uuidv4(),
-		title: { id: 'dev.projects.5.title', defaultMessage: '_wallpaper' },
+		title: { id: 'dev.projects.6.title', defaultMessage: '_wallpaper' },
 		description: {
-			id: 'dev.projects.5.description',
+			id: 'dev.projects.6.description',
 			defaultMessage: '',
 		},
 		tech: ['Android'],

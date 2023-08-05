@@ -60,7 +60,8 @@ type AvailableTech =
 	| 'TypeScript'
 	| 'HTML'
 	| 'CSS'
-	| 'Docker';
+	| 'Docker'
+	| 'Tailwind CSS';
 export interface Project extends TitleAndKey {
 	description: I18nMessage;
 	url: string;

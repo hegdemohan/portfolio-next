@@ -30,6 +30,7 @@ import TypeScript from '@/public/icons/techs/typescript.svg';
 import Python from '@/public/icons/techs/python.svg';
 import Docker from '@/public/icons/techs/docker.svg';
 import Android from '@/public/icons/techs/android.svg';
+import TailwindCss from '@/public/icons/techs/tailwindcss.svg';
 import SnakeGameArrow from '@/public/icons/snake-game/arrow-button.svg';
 import NailUpLeft from '@/public/icons/snake-game/nail-up-left.svg';
 import NailUpRight from '@/public/icons/snake-game/nail-up-right.svg';
@@ -86,6 +87,7 @@ export const iconTypes = {
 	python: Python,
 	docker: Docker,
 	android: Android,
+	tailwindCss: TailwindCss,
 };
 
 const IconComponent = ({

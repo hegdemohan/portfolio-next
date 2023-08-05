@@ -151,26 +151,31 @@ const de = {
 		},
 		projects: {
 			'1': {
+				title: '_portfolio',
+				description:
+					'Projekt mit Next.js und Tailwind CSS - eine persönliche Portfolio-Website, die meine Reise und Expertise verkörpert. Open Source auf GitHub, lädt sie Mitentwickler ein, zu erkunden, zu lernen und möglicherweise für ihre eigenen Portfolios anzupassen. Entdecken Sie die Verschmelzung von Technologie und Design und spiegeln Sie mein Engagement für Wachstum und Zusammenarbeit im Bereich der Webentwicklung wider.',
+			},
+			'2': {
 				title: '_jober-desk-frontend',
 				description:
 					'Jober-Desk ist ein Job-Bewerbungsportal, das im Rahmen des Lehrplans der Hochschule Rhein-Waal entwickelt wurde. Es dient als dynamische Plattform, die Arbeitgeber und Arbeitnehmer miteinander verbindet und Arbeitsstellen für Arbeitgeber listet sowie einen nahtlosen Bewerbungsprozess für Bewerber ermöglicht.',
 			},
-			'2': {
+			'3': {
 				title: '_jober-desk-backend',
 				description:
 					'Das Projekt wurde mit Python entwickelt und folgt einer Microservices-Architektur, die mit Docker bereitgestellt wird. Es zeigt die Leistungsfähigkeit und Flexibilität dieser Technologien bei der Erstellung effizienter und skalierbarer Anwendungen.',
 			},
-			'3': {
+			'4': {
 				title: '_docx-reader',
 				description:
 					'Android-Docx-Reader, der es Benutzern ermöglicht, mühelos mit Docx-Dateien auf ihren Geräten zu interagieren und diese anzuzeigen.',
 			},
-			'4': {
+			'5': {
 				title: '_a-r-p',
 				description:
 					'"Automated Learning Agreement" - Eine benutzerfreundliche ReactJS-Webanwendung, die die Verifizierung und Verarbeitung von Learning Agreements für Studenten und Verwaltungsmitarbeiter der Hochschule Rhein-Waal vereinfachen soll. Dieses Projekt zielt darauf ab, das Learning Agreement-Erlebnis zu optimieren und zu verbessern.',
 			},
-			'5': {
+			'6': {
 				title: '_wallpaper',
 				description:
 					'Mein erstes Android-Projekt bietet den Benutzern eine umfangreiche Sammlung von Hintergrundbildern, die von der Google Photos API bezogen wurden. Die App ermöglicht es den Benutzern, mit einem Widget zwischen Hintergrundbildern zu wählen und sie zu wechseln und bietet so ein ansprechendes und visuell ansprechendes Erlebnis.',

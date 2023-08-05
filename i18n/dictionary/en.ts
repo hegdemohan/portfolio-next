@@ -150,26 +150,31 @@ const en = {
 		},
 		projects: {
 			'1': {
+				title: '_portfolio',
+				description:
+					"Project using Next.js and Tailwind CSS - a personalized portfolio website that encapsulates my journey and expertise. Open-source on GitHub, it's an invitation for fellow developers to explore, learn, and potentially adapt for their own portfolios. Explore the fusion of technology and design, reflecting my commitment to growth and collaboration in the realm of web development",
+			},
+			'2': {
 				title: '_jober-desk-frontend',
 				description:
 					'Jober-Desk is a Job Application Portal developed as part of the Hochschule Rhein-Waal curriculum. It serves as a dynamic platform connecting employers and employees, facilitating job listings for employers and seamless application processes for applicants.',
 			},
-			'2': {
+			'3': {
 				title: '_jober-desk-backend',
 				description:
 					'The project is built using Python and follows a microservices architecture deployed with Docker. It showcases the power and flexibility of these technologies in creating efficient and scalable applications.',
 			},
-			'3': {
+			'4': {
 				title: '_docx-reader',
 				description:
 					'Android docx reader, enabling users to effortlessly view and interact with docx files on their devices',
 			},
-			'4': {
+			'5': {
 				title: '_a-r-p',
 				description:
 					'"Automated Learning Agreement" - A user-friendly ReactJS web application designed to simplify the verification and processing of learning agreements for Hochschule Rhein-Waal\'s students and administrative staff. This project aimed to streamline and enhance the learning agreement experience.',
 			},
-			'5': {
+			'6': {
 				title: '_wallpaper',
 				description:
 					'My debut Android project, which offers users a vast collection of wallpapers sourced from Google Photos API. With the ability to choose and switch between wallpapers using a widget, the app provides an engaging and visually appealing experience for users.',
