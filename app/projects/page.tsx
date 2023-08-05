@@ -5,14 +5,18 @@ import { PROJECTS, TECHS } from '@/utils/data/projects';
 import IconComponent from '@/utils/icons';
 import { Tech } from '@/utils/types';
 import Image from 'next/image';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 // There are a total of 6 images in /public/project-images
 const PROJECT_IMAGES_LENGTH = 6;
 const Projects = () => {
-	console.log(window.matchMedia('(min-width:1280px)').matches);
-	const [isFilterOpen, setIsFilterOpen] = useState(window.matchMedia('(min-width:991px)').matches);
+	const [isFilterOpen, setIsFilterOpen] = useState(false);
 	const [selectedTechs, setSelectedTechs] = useState<Tech['tech'][]>([]);
+
+	useEffect(() => {
+		// Keep the filter closed for mobile and open for larger screens by default
+		setIsFilterOpen(window.matchMedia('(min-width:991px)').matches);
+	}, []);
 
 	/** Handles the toggling of tech in the project filter */
 	const onTechToggled = (item: Tech['tech']) => {
