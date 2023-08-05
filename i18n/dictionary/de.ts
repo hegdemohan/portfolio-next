@@ -1,4 +1,5 @@
 const de = {
+	credits: 'abspann',
 	emailSentSuccess: 'Die Nachricht wurde erfolgreich gesendet!',
 	error: {
 		emailSendingError: 'Beim Senden der Nachricht ist etwas schief gelaufen!',

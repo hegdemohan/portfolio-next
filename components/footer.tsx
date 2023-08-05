@@ -33,7 +33,7 @@ const Footer = () => {
 					<div className="flex grow">
 						<div className="hidden h-full flex-shrink-0 items-center border-x border-br-default px-6 lg:flex">
 							{getFormattedMessage({
-								id: 'social.infoText',
+								id: 'credits',
 								defaultMessage: 'credits',
 							})}
 						</div>
