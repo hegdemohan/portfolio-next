@@ -1,6 +1,6 @@
 // Icon property is the key of iconTypes defined in the file @/utils/icons.tsx
 const en = {
-	credits: 'Aabspann',
+	credits: 'credits',
 	emailSentSuccess: 'Message has been sent successfully!',
 	error: {
 		emailSendingError: 'Something went wrong while sending the message!',
