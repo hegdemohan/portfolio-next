@@ -10,7 +10,7 @@ export const DesktopNavbar = ({ pathname }: { pathname: string }) => {
 					id="developer-name"
 					href="/"
 					label={{
-						id: 'dev.name',
+						id: 'dev.logoName',
 						defaultMessage: 'mohan-hegde',
 					}}
 					className="min-w-[50%] border-r"

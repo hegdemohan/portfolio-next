@@ -1,6 +1,14 @@
 import { I18nMessage } from '@/i18n/types';
 import { iconTypes } from './icons';
 
+/** Contact form data */
+export type ContactFormData = {
+	name: string;
+	email: string;
+	subject: string;
+	message: string;
+};
+
 /** A Nested json with only string values */
 export type NestedStringJSON = {
 	[key: string]: string | NestedStringJSON;
