@@ -1,21 +1,25 @@
 import { useAppContext } from '@/providers/app-context-provider';
 import messages, { isSupportedLocale } from '@/i18n';
 import IconComponent from '@/utils/icons';
+import { useState } from 'react';
 
 const TranslationMenu = () => {
 	const { locale, setLocale } = useAppContext();
+	const [isTranslationMenuOpen, setIsTranslationMenuOpen] = useState(false);
 	return (
 		<div className="relative mx-4 h-full">
 			<button
-				tabIndex={0}
-				className="peer h-full justify-center focus-within:text-white"
+				className={`h-full justify-center ${isTranslationMenuOpen ? 'text-white' : ''}`}
 				type="button"
 				title="language"
+				onClick={() => setIsTranslationMenuOpen(!isTranslationMenuOpen)}
 			>
 				<IconComponent name="translate" />
 			</button>
 			<div
-				className="transform-all invisible absolute -right-4 origin-top scale-95 transform rounded-md border border-br-default bg-dark-bg opacity-0 duration-300 peer-focus-within:visible peer-focus-within:opacity-100"
+				className={`transform-all  absolute -right-4 origin-top scale-95 transform rounded-md border border-br-default bg-dark-bg duration-300 ${
+					isTranslationMenuOpen ? 'block' : 'hidden'
+				}`}
 				role="menu"
 			>
 				<div className="flex flex-col">
