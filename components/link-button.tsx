@@ -22,7 +22,7 @@ const LinkButton = ({ label, className, isActive, ...rest }: Props) => {
 	return (
 		<Link
 			{...rest}
-			className={`flex h-full flex-shrink-0 items-center border-br-default px-6 hover:bg-hover-bg hover:text-slate-100 ${className} ${
+			className={`flex h-full flex-shrink-0 items-center border-br-default px-5 hover:bg-hover-bg hover:text-slate-100 ${className} ${
 				isActive ? 'border-b-2 border-b-br-active text-white' : ''
 			}`}
 		>

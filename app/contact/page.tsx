@@ -89,7 +89,7 @@ const Contact = () => {
 
 	return (
 		<div className="flex grow flex-col overflow-hidden font-fira_regular text-menu-text  lg:flex-row">
-			<div className="border-br-default lg:w-60 lg:border-r ">
+			<div className="border-br-default lg:w-64 lg:border-r ">
 				<Contacts
 					onClick={(contact) => {
 						navigator.clipboard.writeText(contact);

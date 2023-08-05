@@ -1,12 +1,13 @@
 import { iconTypes } from '../icons';
 
-// footer links
-const SOCIAL_MEDIA_LINKS: {
+type FooterLink = {
 	key: string | number;
 	href: string;
 	icon: keyof typeof iconTypes;
 	label?: string;
-}[] = [
+};
+// footer links
+export const SOCIAL_MEDIA_LINKS: FooterLink[] = [
 	{
 		key: 1,
 		href: 'https://www.facebook.com/mohan.hegde94',
@@ -17,13 +18,26 @@ const SOCIAL_MEDIA_LINKS: {
 		href: 'https://www.instagram.com/mohanhegde',
 		icon: 'instagram',
 	},
-	// The last element will be pushed to the end in the UI,
-	// So keep the contact at the end always to follow the design
+];
+
+export const CREDIT_LINKS: FooterLink[] = [
 	{
-		key: 3,
-		href: 'https://github.com/hegdemohan',
-		label: '@mohanhegde',
-		icon: 'github',
+		key: 1,
+		href: 'https://www.behance.net/gallery/142207047/Portfolio-Concept-V2',
+		icon: 'design',
+		label: 'design',
+	},
+	{
+		key: 2,
+		href: 'https://undraw.co/illustrations',
+		icon: 'illustration',
+		label: 'illustration',
 	},
 ];
-export default SOCIAL_MEDIA_LINKS;
+
+export const GITHUB: FooterLink = {
+	key: 1,
+	href: 'https://github.com/hegdemohan',
+	label: '@mohanhegde',
+	icon: 'github',
+};

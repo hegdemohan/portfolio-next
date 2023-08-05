@@ -43,7 +43,7 @@ export default function Home() {
 						})}
 					</h2>
 
-					<div className="flex flex-col gap-2">
+					<div className="mb-16 flex flex-col gap-2">
 						<span className="hidden text-sm text-menu-text lg:flex">
 							{getFormattedMessage({
 								id: 'welcome.info.playGameToContinue',
@@ -56,14 +56,16 @@ export default function Home() {
 								defaultMessage: '// you can also see it on my Github page: ',
 							})}
 						</span>
-						<p className="font-fira_medium">
-							<span className=" text-purple">{'const '}</span>
-							<span className="text-neon-green">{'githubLink'}</span>
-							<span>{' = '}</span>
-							<a className="text-string" href="https://github.com/">
+						<div className="font-fira_medium">
+							<p>
+								<span className=" text-purple">{'const '}</span>
+								<span className="text-neon-green">{'githubLink'}</span>
+								<span>{' = '}</span>
+							</p>
+							<a className="break-all text-string" href={GITHUB_PROJECT_LINK}>
 								{GITHUB_PROJECT_LINK}
 							</a>
-						</p>
+						</div>
 					</div>
 				</div>
 				<div className="hidden flex-1 lg:flex">

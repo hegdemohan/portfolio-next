@@ -3,7 +3,8 @@ import en from '@/i18n/dictionary/en';
 import { v4 as uuidv4 } from 'uuid';
 import { AboutSection, AboutSubSection, Contacts } from '../types';
 
-export const GITHUB_PROJECT_LINK = 'https://github.com/hegdemohan';
+export const GITHUB_PROJECT_LINK = 'https://github.com/hegdemohan/portfolio-next';
+
 /** The contact details of the developer */
 export const CONTACTS: Contacts = {
 	title: { id: 'contacts', defaultMessage: 'title' },

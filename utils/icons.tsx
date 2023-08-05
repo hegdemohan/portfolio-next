@@ -14,6 +14,8 @@ import ProfileFilled from '@/public/icons/sections/filled/profile.svg';
 import Game from '@/public/icons/sections/game.svg';
 import Profile from '@/public/icons/sections/profile.svg';
 import Facebook from '@/public/icons/social/facebook.svg';
+import Design from '@/public/icons/credits/designtools.svg';
+import Illustration from '@/public/icons/credits/pentool.svg';
 import Github from '@/public/icons/social/github.svg';
 import Instagram from '@/public/icons/social/instagram.svg';
 import SolidArrow from '@/public/icons/solid-arrow.svg';
@@ -60,6 +62,10 @@ export const iconTypes = {
 	facebook: Facebook,
 	instagram: Instagram,
 	github: Github,
+
+	// Credit icons
+	design: Design,
+	illustration: Illustration,
 
 	// Section icons
 	briefcase: Briefcase,

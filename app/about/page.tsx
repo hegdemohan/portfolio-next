@@ -62,7 +62,7 @@ const About = () => {
 		<section className="flex grow flex-col overflow-auto  text-menu-text lg:flex-row">
 			{/* Menu buttons to show different sections */}
 			<div className="border-br-default lg:border-r">
-				<div className="flex flex-row  lg:w-20 lg:flex-col">
+				<div className="flex flex-row lg:w-20 lg:flex-col">
 					{ABOUT_SECTIONS.map(({ key: sectionKey, icon }) => {
 						const filledIcon = `filled-${icon}`;
 						// Make sure the icons are present
