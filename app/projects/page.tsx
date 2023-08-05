@@ -10,7 +10,8 @@ import { Fragment, useState } from 'react';
 // There are a total of 6 images in /public/project-images
 const PROJECT_IMAGES_LENGTH = 6;
 const Projects = () => {
-	const [isFilterOpen, setIsFilterOpen] = useState(true);
+	console.log(window.matchMedia('(min-width:1280px)').matches);
+	const [isFilterOpen, setIsFilterOpen] = useState(window.matchMedia('(min-width:991px)').matches);
 	const [selectedTechs, setSelectedTechs] = useState<Tech['tech'][]>([]);
 
 	/** Handles the toggling of tech in the project filter */
@@ -28,7 +29,7 @@ const Projects = () => {
 
 	return (
 		<div className="flex grow flex-col overflow-hidden font-fira_regular text-sm lg:grid lg:auto-cols-auto lg:grid-flow-col lg:text-base">
-			<div className="w-64 border-r  border-br-default">
+			<div className="w-full border-r border-br-default lg:w-64">
 				<button
 					className={`flex w-full items-center gap-2 bg-active-bg/50 px-6 py-4 text-slate-300 lg:flex-row-reverse lg:justify-end lg:border-b lg:border-br-default lg:bg-transparent lg:px-3 lg:py-2 ${
 						isFilterOpen ? 'bg-active-bg' : ''
@@ -44,7 +45,10 @@ const Projects = () => {
 					<IconComponent name="solidArrow" className={`${isFilterOpen ? 'rotate-90' : ''}`} />
 				</button>
 				{isFilterOpen && (
-					<div id="filters" className="border-b border-br-default px-6 lg:border-none">
+					<div
+						id="filters"
+						className="grid grid-cols-[repeat(auto-fill,_minmax(150px,_1fr))] gap-3 border-b border-br-default px-6 lg:block lg:border-none"
+					>
 						{TECHS.map(({ tech, key, icon }) => (
 							<div
 								key={key}
