@@ -31,6 +31,7 @@ const TranslationMenu = () => {
 							role="menuitem"
 							key={lang}
 							onClick={() => {
+								setIsTranslationMenuOpen(false);
 								if (isSupportedLocale(lang)) setLocale(lang);
 							}}
 						>
