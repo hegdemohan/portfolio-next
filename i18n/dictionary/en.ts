@@ -14,7 +14,7 @@ const en = {
 		title: 'Hi all, I am',
 		info: {
 			playGameToContinue: '// complete the game to continue',
-			findProjectHere: '// you can also see it on my Github page: ',
+			findProjectHere: '// you can also see this project on my Github page: ',
 		},
 	},
 	game: {

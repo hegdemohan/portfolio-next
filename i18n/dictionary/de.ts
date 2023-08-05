@@ -14,7 +14,7 @@ const de = {
 		title: 'Hallo zusammen, ich bin',
 		info: {
 			playGameToContinue: '// beende das Spiel, um fortzufahren',
-			findProjectHere: '// du kannst es auch auf meiner Github-Seite sehen: ',
+			findProjectHere: '// Sie können dieses Projekt auch auf meiner Github-Seite sehen: ',
 		},
 	},
 	game: {
