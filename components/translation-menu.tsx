@@ -7,7 +7,7 @@ const TranslationMenu = () => {
 	return (
 		<div className="relative mx-4 h-full">
 			<button
-				tabindex="0"
+				tabIndex={0}
 				className="peer h-full justify-center focus-within:text-white"
 				type="button"
 				title="language"
