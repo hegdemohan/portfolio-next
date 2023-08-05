@@ -1,4 +1,15 @@
 const de = {
+	emailSentSuccess: 'Die Nachricht wurde erfolgreich gesendet!',
+	error: {
+		emailSendingError: 'Beim Senden der Nachricht ist etwas schief gelaufen!',
+		pageNotFound: '404 Seite nicht gefunden',
+		pageNotFoundMessage:
+			'Hoppla! Du hast dich in unerforschtes digitales Gebiet gewagt. Diese Seite scheint verloren gegangen zu sein. Lass uns dich zurücklenken, wo du hingehörst!',
+		somethingWrong: 'Etwas ist schiefgelaufen!',
+		backMessage1: 'Bitte klicken Sie auf die',
+		backMessage2: ' Schaltfläche, um zur Startseite zurückzukehren.',
+		back: 'Zurück',
+	},
 	welcome: {
 		title: 'Hallo zusammen, ich bin',
 		info: {

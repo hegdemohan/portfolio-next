@@ -34,6 +34,7 @@ import NailUpRight from '@/public/icons/snake-game/nail-up-right.svg';
 import NailDownLeft from '@/public/icons/snake-game/nail-down-left.svg';
 import NailDownRight from '@/public/icons/snake-game/nail-down-right.svg';
 import Food from '@/public/icons/snake-game/food.svg';
+import Spinner from '@/public/icons/spinning.svg';
 import { HTMLProps } from 'react';
 
 export const iconTypes = {
@@ -54,6 +55,7 @@ export const iconTypes = {
 	nailDownLeft: NailDownLeft,
 	nailDownRight: NailDownRight,
 	food: Food,
+	spinner: Spinner,
 	// Social icons
 	facebook: Facebook,
 	instagram: Instagram,

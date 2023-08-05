@@ -12,7 +12,7 @@ export async function POST(req: Request) {
 			html: generateTemplate(body),
 		});
 	} catch (error) {
-		return new Response('Bad request', { status: 400 });
+		return new Response(`Could not send message\n Bad request : ${error}`, { status: 400 });
 	}
 	return new Response(JSON.stringify({ success: 'post' }));
 }

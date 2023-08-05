@@ -1,5 +1,15 @@
 // Icon property is the key of iconTypes defined in the file @/utils/icons.tsx
 const en = {
+	emailSentSuccess: 'Message has been sent successfully!',
+	error: {
+		emailSendingError: 'Something went wrong while sending the message!',
+		pageNotFound: '404 page not found',
+		pageNotFoundMessage: `Oops! You've ventured into uncharted digital territory. This page seems to have gone missing. Let's steer you back to where you belong!`,
+		somethingWrong: 'something went wrong!',
+		backMessage1: 'kindly click the',
+		backMessage2: ' button to navigate back to the home screen.',
+		back: 'back',
+	},
 	welcome: {
 		title: 'Hi all, I am',
 		info: {
